@@ -1,0 +1,12 @@
+node_modules/
+**/node_modules/
+.env
+.env.local
+**/.env
+build/
+dist/
+**/build/
+*.log
+.DS_Store
+serviceAccountKey.json
+**/serviceAccountKey.json

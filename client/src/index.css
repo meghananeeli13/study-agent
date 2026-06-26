@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* dusk-blue */
+  --bg-950: #0c1018;
+  --bg-900: #111722;
+  --bg-800: #222d44;
+  --bg-700: #334466;
+  --bg-600: #445b88;
+
+  /* wisteria-blue accent */
+  --accent-400: #648bce;
+  --accent-500: #3d6ec2;
+  --accent-300: #8ba8da;
+
+  /* celadon green */
+  --green-400: #7ebc76;
+  --green-500: #5eab54;
+
+  /* flag-red */
+  --red-400: #db575b;
+  --red-500: #d22d32;
+
+  /* pale-oak */
+  --muted-400: #bf9673;
+  --muted-300: #cfb196;
+
+  /* text */
+  --text-primary: #eef1f6;
+  --text-secondary: #99aacc;
+  --text-muted: #445b88;
+
+  /* borders */
+  --border: #222d44;
+  --border-light: #334466;
+}
+
+body {
+  background-color: var(--bg-950);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-900);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-700);
+  border-radius: 3px;
+}
+
+/* markdown rendering */
+.markdown h1, .markdown h2, .markdown h3 {
+  color: var(--text-primary);
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+.markdown h3 { font-size: 14px; }
+.markdown h2 { font-size: 16px; }
+.markdown p {
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.markdown ul, .markdown ol {
+  padding-left: 20px;
+  color: var(--text-secondary);
+}
+.markdown li { margin-bottom: 4px; }
+.markdown strong { color: var(--text-primary); }
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+.markdown th {
+  background: var(--bg-800);
+  padding: 8px 12px;
+  text-align: left;
+  color: var(--text-primary);
+  font-size: 13px;
+}
+.markdown td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.markdown hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 12px 0;
+}
