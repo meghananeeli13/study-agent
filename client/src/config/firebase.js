@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCW9REIE-UPbscgxP2BofW-LUVduhx34YY",
-  authDomain: "study-agent-9c159.firebaseapp.com",
-  projectId: "study-agent-9c159",
-  storageBucket: "study-agent-9c159.firebasestorage.app",
-  messagingSenderId: "813538557634",
-  appId: "1:813538557634:web:5710b848415d9b9911855b",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
 }
 
 const app = initializeApp(firebaseConfig)
