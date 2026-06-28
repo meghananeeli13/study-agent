@@ -28,7 +28,7 @@ const sanitizeTask = (t) => ({
   done: typeof t.done === 'boolean' ? t.done : Boolean(t.completed),
   note: isNonEmptyString(t.note, 500) ? t.note.trim() : '',
   custom: Boolean(t.custom),
-  id: t.id
+  id: t.id !== undefined ? t.id : Date.now() + Math.floor(Math.random() * 1000)
 })
 
 module.exports = {
